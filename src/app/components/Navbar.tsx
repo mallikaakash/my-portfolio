@@ -36,7 +36,7 @@ const Navbar = (props: Props) => {
         </h1>
         <ul className="flex">
           {navbarItems.map((item) => (
-            <Link href={`${item.url}`}>
+            <Link href={`${item.url}`} key={item.name}>
               <li
                 className="text-white mx-8 text-xl fond-bold underline decoration-cyan-500"
                 key={item.name}
@@ -48,7 +48,7 @@ const Navbar = (props: Props) => {
         </ul>
         <ul className="flex">
           {socials.map((social) => (
-            <Link href={`${social.url}`}>
+            <Link href={`${social.url}`} key={social.name}>
               <li className="mx-8 " key={social.name}>
                 <social.icon fill="white" size={30} />
               </li>
