@@ -18,19 +18,16 @@ const Intro = (props: Props) => {
           <span className="underline decoration-cyan-500 ">Aakash Mallik</span>
           ...
         </h1>
-        <p className="mt-4 flex text-3xl">
-          {" "}
-          I like
-          <span className="text-3xl text-cyan-500 ml-2">
-            <Typewriter
-              options={{
-                strings: ["Research", "Web Development", "Machine Learning"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </span>
-        </p>
+        <p className="mt-4 flex text-3xl"> I like</p>
+        <span className="text-3xl text-cyan-500 ml-2">
+          <Typewriter
+            options={{
+              strings: ["Research", "Web Development", "Machine Learning"],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </span>
 
         <p className="text-white text-2xl mt-11 flex  ">
           {" "}
